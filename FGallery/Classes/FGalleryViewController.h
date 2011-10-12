@@ -32,49 +32,29 @@ typedef enum
 	UIStatusBarStyle _prevStatusStyle;
 	
 	BOOL _isActive;
-	
-	BOOL _isFullscreen;
-	
+	BOOL _isFullscreen;	
 	BOOL _isScrolling;
-	
 	BOOL _isThumbViewShowing;
-    
     BOOL _isDocumentsGallery;
 	
 	float _prevNextButtonSize;
 	
-	CGRect _scrollerRect;
-	
-	NSString *galleryID;
-	
-	NSInteger _currentIndex;
-	
-	UIView *_container; // used as view for the controller
-	
-	UIView *_innerContainer; // sized and placed to be fullscreen within the container
-	
-	UIToolbar *_toolbar;
-	
-	UIScrollView *_thumbsView;
-	
-	UIScrollView *_scroller;
-	
-	UIView *_captionContainer;
-	
-	UILabel *_caption;
-	
-	NSMutableDictionary *_photoLoaders;
-	
-	NSMutableArray *_barItems;
-	
-	NSMutableArray *_photoThumbnailViews;
-	
-	NSMutableArray *_photoViews;
-	
-	NSObject <FGalleryViewControllerDelegate> *_photoSource;
-	
-	UIBarButtonItem *_nextButton;
-	
+	CGRect _scrollerRect;	
+	NSString *galleryID;	
+	NSInteger _currentIndex;	
+	UIView *_container; // used as view for the controller	
+	UIView *_innerContainer; // sized and placed to be fullscreen within the container	
+	UIToolbar *_toolbar;	
+	UIScrollView *_thumbsView;	
+	UIScrollView *_scroller;	
+	UIView *_captionContainer;	
+	UILabel *_caption;	
+	NSMutableDictionary *_photoLoaders;	
+	NSMutableArray *_barItems;	
+	NSMutableArray *_photoThumbnailViews;	
+	NSMutableArray *_photoViews;	
+	NSObject <FGalleryViewControllerDelegate> *_photoSource;	
+	UIBarButtonItem *_nextButton;	
 	UIBarButtonItem *_prevButton;
 }
 

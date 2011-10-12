@@ -165,7 +165,7 @@
 
 - (int)numberOfPhotosForPhotoGallery:(FGalleryViewController *)gallery
 {
-    int num;
+    int num = 0;
     if( gallery == localGallery ) {
         num = [localImages count];
     }
@@ -194,7 +194,7 @@
 
 - (NSString*)photoGallery:(FGalleryViewController *)gallery captionForPhotoAtIndex:(NSUInteger)index
 {
-    NSString *caption;
+    NSString *caption = @"";
     if( gallery == localGallery ) {
         caption = [localCaptions objectAtIndex:index];
     }
